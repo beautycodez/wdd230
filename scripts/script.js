@@ -7,3 +7,4 @@ const min = lastModi.getMinutes();
 const sec = lastModi.getSeconds();
 const pickFooter = document.querySelector('#lastmodified').innerHTML += `Last Updated: ${month + 1}/${day}/${year} ${hour}:${min}:${sec}`;
 
+document.querySelector("#copyright").innerHTML+=` ${year}`;
