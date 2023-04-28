@@ -76,3 +76,19 @@ footer p{
     color: yellow;
     font-weight: bold;
 }
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 32.5em) {
+    header h1{
+        color: black;
+
+    }
+    header{
+        background-color: blue;
+    }
+    footer{
+        background-color: blue;
+    }
+}
