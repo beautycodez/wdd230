@@ -278,9 +278,9 @@ table {
 }
 
 @media screen and (min-width: 60em) {
-    nav {
+    /* nav {
         display: block;
-    }
+    } */
    nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
