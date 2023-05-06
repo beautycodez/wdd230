@@ -1,0 +1,347 @@
+
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Josefin+Sans&family=Nanum+Myeongjo:wght@800&display=swap');
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #E6EFE9   ;
+  --secondary-color: #D64045 ;
+  --accent1-color: #230903;
+  --accent2-color: #073B3A;
+  
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Josefin Sans';
+  --paragraph-font: 'Nanum Myeongjo','Assistant', serif;
+  
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #073B3A;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #073B3A; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #D64045  ;
+  --nav-link-color: #396E94;
+  --nav-background-color: #D4AC0D;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396E94;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+#site-header-color {
+    font-size: 3em;
+    font-family: var(--heading-font);
+    color: white;
+    background-color: var(--paragraph-background-color);
+}
+#navigation-color {
+    font-size: 1.2em;
+    font-family: var(--heading-font);
+    color: #073B3A;
+    background-color: var(--primary-color);
+}
+#footer-color {
+    font-size: 1.2em;
+    font-family: var(--heading-font);
+    color: white;
+    background-color: var(--paragraph-background-color);
+}
+#heading1-color {
+    font-size: 3em;
+    font-family: var(--heading-font);
+    color: white;
+    background-color: var(--paragraph-background-color);
+}
+#heading2-color {
+    font-size: 2em;
+    font-family: var(--heading-font);
+    color: white;
+    background-color: var(--paragraph-background-color);
+}
+#heading3-color {
+    font-size: 1.4em;
+    font-family: var(--heading-font);
+    color: #073B3A;
+    background-color: var(--paragraph-color-on-color);
+}
+#paragraph-color {
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+    color: black;
+    background-color: var(--paragraph-color-on-color);
+}
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+  text-align: center;
+  font-size: 1em;
+}
+h3 {
+    font-size: 0.8m;
+}
+p{
+    font-size: 0.7em;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+footer {
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+    font-size: 1.2em;
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+.colors {
+  /* display:block; */
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+}
+#colors thead {
+    display: none;
+}
+#colors tr:nth-of-type(2n) {
+    background-color: inherit;
+}
+.colors tbody{
+    display: flex;
+    padding-left: 20%;    
+}
+.colors tr:first-child {
+    
+  background-color: #999;
+  font-weight: bold;
+  /* font-size: 1.3em; */
+}
+.colors tr:nth-child(2) {
+    display:inline;
+}
+.colors td{
+    display: block;
+    text-align: center;
+  width: 100%;
+  height: 3em;
+}
+.colors th{
+    display: block;
+    text-align: center;
+  width: 100%;
+  height: 3em;
+}
+.colors tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+}
+.primary {
+  
+  background-color: var(--primary-color);
+  
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--primary-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 0.8em;
+}
+nav  {
+  display: block;
+  box-shadow: 0 2px 15px gray;
+}
+nav ul {
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style:none;
+}
+nav a {
+  display:block;
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2em;
+}
+nav a:link, nav a:visited {
+  color: #073B3A
+  ;
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+table {
+    display: block;
+    overflow-x: auto;
+  }
+  table td {
+    
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 60em) {
+    nav {
+        display: block;
+    }
+   nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style:none;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    table td {
+    
+        border: 1px solid black;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    nav {
+        background-color: var(--primary-color);
+        line-height: 3em;
+        text-align: center;
+        font-size: 1.2em;
+      }
+      .colors {
+        display:block;
+        width: 100%;
+        min-width: 350px;
+        margin: 30px auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        
+      }
+      .colors th {
+        background-color: #999;
+      }
+      .colors td{
+        width: 100%;
+        height: 3em;
+      }
+      .colors tbody{
+        display: block;
+        padding-left: 0;
+    }
+    .colors tr:nth-child(2) {
+        display:flex;
+        max-width: 100%;
+    }
+}
