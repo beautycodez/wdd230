@@ -1,0 +1,47 @@
+@media only screen and (min-width: 37.5em) {
+    header h1 {
+        font-size: 3.5rem;
+        line-height: 30px;
+    }
+    header h1 span {
+        font-size: 1.1rem;
+    }
+    header nav button {
+        margin: 0;
+        background: transparent;
+        font-size: 2rem;
+        color:#6b0f12 ;
+        width: 100%;
+    }
+    
+    .social svg {
+        width: 35px;
+        height: auto;
+        border-radius: 50%;
+    }
+    .footerContainer {
+        flex-direction:row ;
+        font-size: 1.4rem;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footerContainer > div {
+        flex: 1;
+    }
+    .address {
+        text-align: left;
+        margin-right: 50px;
+    }
+    #location {
+        font-size: 1rem;
+    }
+    .contactInformation {
+        font-size: 1.3rem;
+        line-height: 30px;
+        margin-right: 20px;
+    }
+    #logoFooter picture img {
+        max-height: 300px;
+        margin: 0;
+    }
+}

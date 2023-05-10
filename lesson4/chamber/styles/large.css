@@ -1,0 +1,50 @@
+@media only screen and (min-width: 60em) {
+    header {
+        grid-template-columns: 154px 250px 4fr 1fr;
+    }
+    .logo {
+        grid-column: 1;
+        padding: 5px;
+        margin-left: 40px;;
+    }
+    .logo picture {
+        max-height: 300px;
+        margin: 0;
+    }
+    .logo picture img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    header h1 {
+        grid-column: 2;
+        margin-left: 40px;
+    }
+    .social {
+        grid-column: 4;
+    }
+    nav#navigation {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    #hamburgerBtn {
+        display: none;
+    }
+    nav ul#primaryNav {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav ul#primaryNav li {
+        margin: 15px;
+        color: white;
+        font-size: 1.2rem;
+        padding: 5px;
+        flex: 50px;
+    }
+    nav ul#primaryNav li:hover {
+        background-color: white;
+        color: black;
+    }
+
+}

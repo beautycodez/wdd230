@@ -1,0 +1,148 @@
+
+
+header {
+    display: grid;
+    grid-template-columns: 15vw 45vw 2.5fr 1fr;
+    background-color: #D64045;
+    max-width: 100vw;
+}
+.social {
+	/* margin-right: 1.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2.5vw;
+}
+.social svg {
+	width: 20px;
+	height: auto;
+    border-radius: 50%;
+}
+.logo {
+    /* align-items: center; */
+    /* height: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo picture {
+    /* align-content: center;
+    align-items: center; */
+    margin-left: 2vw;
+}
+.logo picture img{
+    width: 15vw;
+}
+
+header p {
+    grid-column: 1/5;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 10px;
+    
+    background-color: #E6EFE9;
+}
+header h1 {
+    margin: 10px 5px;
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 2vw;
+}
+header h1 span {
+    font-size: 0.85rem;
+}
+nav {
+    display: flex; 
+    grid-column: 4/5;
+    justify-content: center;
+    margin-right: 10px;
+   
+}
+nav.open {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin-right: 0;
+
+
+}
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.open {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+}
+nav ul.open li {
+    display: block;
+    width:100%;
+    /* flex: 50px; */
+    border: 1px solid grey;
+    background-color: #E6EFE9;
+    color: #073B3A;
+    text-align: center;
+    padding:20px 0;
+}
+nav ul.open li:hover {
+    background-color: rgb(78, 78, 200);
+    color:white;
+}
+header nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #6b0f12;
+    grid-column: 1;
+    /* margin-right: 10vw; */
+}
+header nav button.open {
+    text-align: right;
+    align-self: flex-end;
+    
+}
+
+
+main {
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+main > div {
+    height: 200px;
+    border: 1px grey solid;
+}
+.footerContainer {
+    display:flex;
+    flex-direction: column;
+    background-color: #D64045;
+    text-align: center;
+    color: white
+}
+#logoFooter picture img {
+    width: 50%;
+}
+#footerTitle {
+    font-weight: bold;
+    margin: 15px 0;
+}
+.contactInformation {
+    margin: 20px 0;
+    line-height: 50px;
+}
+.finalInformation {
+    display: flex;
+    border-top: 1px solid #230903;
+    background-color: #D64045;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    
+}
