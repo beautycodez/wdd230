@@ -1,0 +1,236 @@
+
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Didact+Gothic&family=Petit+Formal+Script&display=swap');
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #FEC3D9   ;
+  --secondary-color: #5A5A5A ;
+  --accent1-color: #166400;
+  --accent2-color: #84BCDA;
+
+  /* colors2 */
+  --primary-color2: #FEC3D9   ;
+  --secondary-color2: #002A32 ;
+  --accent1-color2: #F40076;
+  --accent2-color2: #6BD425;
+
+  /* colors3 */
+  --primary-color3: #5A5A5A   ;
+  --secondary-color3: #EFF7CF ;
+  --accent1-color3: #F68E5F;
+  --accent2-color3: #F76C5E;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Petit Formal Script", 'Dancing Script' ;
+  --paragraph-font: 'Didact Gothic', serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #5A5A5A;  /* headlines on a white background */ 
+  --headline-color-on-color: #5A5A5A; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #5A5A5A; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #FEC3D9   ;
+  --nav-link-color: #5A5A5A;
+  --nav-background-color: #84BCDA;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396E94;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+/* first option */
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+/* second options */
+.colors2 {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors2 th {
+  background-color: #999;
+}
+.colors2 td{
+  width: 25%;
+  height: 3em;
+}
+.primary2 {
+  background-color: var(--primary-color2);
+}
+.secondary2 {
+  background-color: var(--secondary-color2);
+}
+.accent1-2 {
+  background-color: var(--accent1-color2);
+}
+.accent2-2{
+  background-color: var(--accent2-color2);
+}
+
+/* third opcion */
+
+.colors3 {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors3 th {
+  background-color: #999;
+}
+.colors3 td{
+  width: 25%;
+  height: 3em;
+}
+.primary3 {
+  background-color: var(--primary-color3);
+}
+.secondary3 {
+  background-color: var(--secondary-color3);
+}
+.accent1-3 {
+  background-color: var(--accent1-color3);
+}
+.accent2-3{
+  background-color: var(--accent2-color3);
+}
+
+
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
