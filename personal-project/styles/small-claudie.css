@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Didact+Gothic&family=Josefin+Sans:wght@100&family=Nanum+Myeongjo&family=Petit+Formal+Script&display=swap');
+
 * {box-sizing:border-box}
 /* -------------------------------header--------------------------- */
+h1,h2,h3,h4 {
+    font-family: "Petit Formal Script","Dancing Script";
+}
+p, button {
+    font-family: "Nanum Myeongjo", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 header {
-    background-color: #F76C5E
+    background-color: #EED0D2
 			
     ;	
 }
@@ -187,7 +195,7 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   border: 1px solid grey;
-  background-color: #6BD425;
+  background-color: #EED0D2;
   align-items: center;
   gap: 25px;
 }
@@ -195,8 +203,10 @@ input[type=submit]:hover {
   justify-content: center;
   flex: 250px;
   height: 250px;
-  background-color: #84BCDA;
+  background-color: #FEC3D9	;
   padding: 20px;
+  border: 2px solid #5A5A5A;
+  box-shadow: 2px 4px 2px 4px;	
 }
 .muestrario section  button{
   position: absolute;
