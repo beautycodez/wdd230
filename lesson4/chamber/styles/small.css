@@ -256,3 +256,13 @@ main hr{
 .join {
     display: none;
 }
+
+.banner p{
+    display: none;
+}
+#banner-msg.open {
+    margin-top: -2px;
+    display: block;
+    background-color: #230903;
+    color: white;
+}

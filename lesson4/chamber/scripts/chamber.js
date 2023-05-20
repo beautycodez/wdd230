@@ -9,6 +9,8 @@ const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
+var dayNow = now.getDay();
+console.log(dayNow);
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 	dateStyle: "full"
 }).format(now);
@@ -29,3 +31,6 @@ function toggleMenu (){
 const x = document.querySelector("#hamburgerBtn");
 x.onclick = toggleMenu;	
 
+if (dayNow == 1 || dayNow == 2){
+	const banner = document.querySelector("#banner-msg").classList.toggle("open");
+}
