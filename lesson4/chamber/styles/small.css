@@ -165,9 +165,6 @@ main > div {
     justify-content: center;
     
 }
-
-
-
 .hero-img {
     width: 100%;
     height: 100%;
@@ -175,6 +172,7 @@ main > div {
 }
 .hero {
     position: relative;
+    height: 416px;
 }
 .hero h2 {
     position: absolute;
@@ -217,6 +215,15 @@ main > div {
     text-align: right;
     margin-right: 15px;
 
+}
+#temperature {
+    font-size: 1.5rem;
+}
+#windspeed {
+    font-size: 1.5rem;
+}
+#windchill {
+    font-size: 1.5rem;
 }
 main hr{
     color: black;
