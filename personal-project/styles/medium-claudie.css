@@ -1,0 +1,49 @@
+/* 600px */
+@media only screen and (min-width: 37.5em) {
+      .muestrario {
+        display: grid;
+        grid-template-columns: 1fr 260px 260px 1fr;
+        border: 1px solid grey;
+        background-color: #EED0D2;
+        gap: 25px;
+        padding: 50px 0px 50px 0px;
+      }
+      .muestrario section {
+        justify-content: center;
+        background-color: #FEC3D9;
+        padding: 20px 5px;
+        border: 2px solid #5A5A5A;
+        box-shadow: 2px 4px 2px 4px;	
+      }
+      .muestrario section  button{
+        position: absolute;
+      }
+      .muestrario section picture img{
+        width: 95%;
+        height: 98%;
+        padding-left: 3%;
+        object-fit: cover;
+      }
+      .muestrario section picture img{
+        object-fit: cover;
+      }
+      .tortas {
+        margin: 0px;
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .postres {
+        margin-bottom: 0px;
+        grid-column: 3;
+        grid-row: 1;
+      }
+      .salados {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      .comidas {
+        grid-column: 3;
+        grid-row: 2;
+        margin-bottom: 0px;
+      }
+}

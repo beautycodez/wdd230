@@ -7,20 +7,22 @@
     <title>Claudie</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small-claudie.css">
+    <link rel="stylesheet" href="styles/medium-claudie.css">
+    <link rel="stylesheet" href="styles/large-claudie.css">
 </head>
 <body>
     <header>
         <div class="header-bar">
             <div class="logo">
                 <picture>
-                    <img class="logo-img" src="images/claudie-logo.png" alt="logo-claudie">
+                    <img class="logo-img" src="images/logo-claudie-404.png" alt="logo-claudie">
                 </picture>
             </div>
             <nav>
                 <div class="hamburger">
                     <button id="hamburgerBtn">&#9776</button>
                 </div>
-                <ul>
+                <ul id="menu">
                     <li>Menu</li>
                     <li>Promociones</li>
                     <li>Acerca de nosotros</li>
@@ -80,13 +82,15 @@
                     <option value="usa">Miraflores</option>
                   </select>
               
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="What's App">
               
                 </form>
               </div>
-            <div>
-                <picture> <img src="" alt=""></picture>
-                <h1>Has tu pedido ya!</h1>
+            <div class="delivery-box">
+                <picture class="delivery-picture"> 
+                    <img class="img-delivery" src="images/delivery-658.webp" alt="delivery">
+                </picture>
+                <h1 class="delivery-msg">Has tu pedido ya!</h1>
             </div>
 
         </div>
@@ -94,26 +98,26 @@
             <section class="tortas">
                 <button>Tortas</button>
                 <picture>
-                    <img src="images/torta-muestra.jpg" alt="torta" style="width: 250px;">
+                    <img src="images/torta-muestra.jpg" alt="torta" >
                 </picture>
             </section>
 
             <section class="postres">
                 <button>Postres</button>
                 <picture>
-                    <img src="images/apple-pie-muestra.jpg" alt="postres" style="width: 250px;">
+                    <img src="images/apple-pie-muestra.jpg" alt="postres" >
                 </picture>
             </section>
             <section class="salados">
                 <button>Salados</button>
                 <picture>
-                    <img src="images/empanadas-muestra.jpg" alt="salados" style="width: 250px;">
+                    <img src="images/empanadas-muestra.jpg" alt="salados">
                 </picture>
             </section>
             <section class="comidas">
                 <button>Comidas</button>
                 <picture>
-                    <img src="images/burger-muestra.jpg" alt="burger" style="width: 250px;">
+                    <img src="images/burger-muestra.jpg" alt="burger">
                 </picture>
             </section>
         </div>
@@ -121,7 +125,7 @@
     <footer>
         <div class="logo">
             <picture>
-                <img class ="logo-img"src="images/claudie-logo.png" alt="logo">
+                <img class ="logo-img" src="images/logo-claudie-404.png" alt="logo">
             </picture>
         </div>
         <div class="social">

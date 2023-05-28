@@ -2,7 +2,7 @@
 
 * {box-sizing:border-box}
 /* -------------------------------header--------------------------- */
-h1,h2,h3,h4 {
+h1,h2,h3,h4,ul {
     font-family: "Petit Formal Script","Dancing Script";
 }
 p, button {
@@ -39,8 +39,9 @@ nav {
   font-size: 1.5rem;
   color: white;
   grid-column: 1;
+  cursor:pointer;
 }
-.header-bar ul li {
+#menu {
   list-style: none;
 }
 .logo-img {
@@ -150,8 +151,7 @@ nav {
 }
 /* -----------------------main----------------------- */
 main {
-  display: grid;
-  grid-template-rows: 1fr 3fr;
+  display: block;
 }
 .delivery {
   border: 1px solid grey;
@@ -189,8 +189,6 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
-
 .muestrario {
   display: flex;
   flex-direction: column;
@@ -212,16 +210,43 @@ input[type=submit]:hover {
   position: absolute;
 }
 .muestrario section picture img{
-  height: 250px;
+  width: 250px;
 }
 .muestrario section picture img{
   object-fit: cover;
+  height: 98%;
 }
 .tortas {
   margin-top: 40px;
 }
 .comidas {
   margin-bottom: 40px;
+}
+.delivery-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.img-delivery {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.delivery-msg {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  text-align: center;
+  margin-right: 20px;
+  width: 150px;
+  background-color: #04AA6D;
+  border-radius: 5%;
+  opacity: 80%;
+  box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.5);
+  font-size: 1.1rem;
 }
 /* ----------footer---------- */
 footer {
