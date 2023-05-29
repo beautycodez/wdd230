@@ -39,5 +39,7 @@
     .muestrario section {
         height: 350px;
       }
-    
+    .delivery {
+        display: flex;
+    }
 }
