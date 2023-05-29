@@ -1,7 +1,14 @@
 /* 960px */
 @media only screen and (min-width: 60em) {
     ul#menu {
+        display: flex;
         margin: 0;
+    }
+    ul#menu li {
+        background-color: #EED0D2;
+    }
+    .header-bar {
+        display: flex;
     }
     .header-bar nav{
         justify-content: left;
@@ -23,7 +30,14 @@
 
 
     } 
-    .header-bar nav ul li:hover {
+    .header-bar nav ul#menu li:hover {
         background-color:  #84BCDA;  
     } 
+    .muestrario {
+        grid-template-columns: 1fr 40vw 40vw 1fr;
+    }
+    .muestrario section {
+        height: 350px;
+      }
+    
 }

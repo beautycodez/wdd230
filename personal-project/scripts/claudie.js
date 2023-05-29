@@ -33,6 +33,7 @@ const menu = document.querySelector("#menu");
 
 function toggleMenu(){
   hamburger.classList.toggle("open");
+  menu.classList.toggle("open");
   console.log("it works");
 }
 
