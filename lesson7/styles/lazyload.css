@@ -1,0 +1,23 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+picture {
+    display:flex;
+}
+picture img {
+    margin: 10px auto;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+  
