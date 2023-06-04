@@ -273,3 +273,42 @@ main hr{
     background-color: #230903;
     color: white;
 }
+/* ----------------------------------------DISCOVER------------------------------------------------------- */
+
+.main-discover {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.section-discover {
+    display: flex;
+    width: fit-content;
+    box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.9);
+    margin: 30px 20px;
+}
+.section-discover article {
+    background-color: #E6EFE9;
+    text-align: center;
+    text-align: justify;
+    line-height: 1.8rem;
+    padding: 10% 20px;
+    width: 300px;
+    
+}
+.section-discover picture {
+    background-color: #073B3A;
+    color: white;
+    width: 300px;
+}
+.section-discover picture img {
+    width: 100%;
+    object-fit: cover;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+.section-discover picture img:hover {
+    opacity: .5;
+}
+.section-discover picture img[data-src] {
+    filter: blur(0.2em);
+}
