@@ -87,6 +87,14 @@ nav ul.open {
     flex-direction: column;
     flex-wrap: wrap;  
 }
+.link {
+    text-decoration: none;
+    color: white;
+}
+.link:hover {
+    text-decoration: none;
+    color: #073B3A;;
+}
 nav ul.open li {
     display: block;
     width:100%;
