@@ -1,0 +1,22 @@
+table {
+    margin: 10px auto;
+    border: thin solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-collapse: collapse;
+}
+tr:nth-child(even) {
+    background-color: aqua;
+}
+.table-header {
+    background-color: black;
+    color: white;
+}
+.header2 {
+    background-color: grey;
+}
+th, td {
+    padding: 20px 40px;
+    font-size: 2rem;
+    text-align: center;
+    border: thin solid black;
+}
