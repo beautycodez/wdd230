@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="images/favicon-16.ico">
+    <title>Join</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -51,7 +49,7 @@
             <ul id="primaryNav">
                 <li> <a class="link"href="discover.html">Discover</a></li>
                 <li>Directory</li>
-                <li><a class="link" href="join.html">Join</a></li>
+                <li>Join</li>
                 <li>Contact</li>
             </ul>
         </nav>
@@ -61,81 +59,69 @@
         <p id="banner-msg">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
     </div>
     
-    <main>
-        <div class="hero">
-            <picture >
-                <source media="(min-width: 960px)"
-                srcset = "images/meeting-1280.webp 1x">
-                <source media="(min-width:600px)"
-                srcset="images/meeting-1275-medium.webp 1x">
-                <img class="hero-img" src="images/meeting-600-small.webp" alt="hero-image">
-            </picture>
-            <h2>Welcome to Naruto</h2>
-            <div class="join-btn">
-                <button>Join the chamber</button>
-            </div>
-        </div>
-        <div class="event">
-            <h1>Ribbon Cutting</h1>
-            <h2>💎The Diamond Shack</h2>
-            <p>Join us for the grand opening of the Diamond Shack,
-                Thursday at 1:00 p.m. <br><span class="more-info">more info...</span>
-            </p>
-        </div>
-        <div class="weather">
-            <h1>Weather</h1>
-            <h2><span>🌥️</span> <span id="temperature">33°C</span> </h2>
-            <h4 class="weather-msg">Partly Cloudy</h4>
-            <hr>
-            <h3>Wind Speed:     <span id="windspeed">2.5km/h</span>  <br>Wind Chill: <span id="windchill"></span></h3>
-        </div>
-        <div class="news-release">
-            <h1>News release</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </p>
-        </div>
-        <div class="spotlights">
-            <section id="section1">
-                <h1>Thankful Transport</h1>
-                <picture><img class="spot-img" src="images/bus-delivery-838.webp" alt="van-delivery"></picture>
-                <h3>"We get it there for you!"</h3>
-                <hr>
-                <p>yourdelivery@fast&furious.com <br>+51 559 154 453 Website</p>
-            </section>
-            <section id="section2">
-                <h1>Thankful Transport</h1>
-                <picture><img class="spot-img" src="images/school-1040.webp" alt="van-delivery"></picture>
-                <h3>An after school coding instructional program.</h3>
-                <hr>
-                <p>
-                    yourbestfriend@beautycodex.com <br>
-                    +51 923 524 695 | Website
-                </p>
-                
-            </section>
-            <section id="section3">
-                <h1>Thankful Transport</h1>
-                <picture><img class="spot-img" src="images/money-1280.png" alt="van-delivery"></picture>
-                <h3>An after school coding instructional program.</h3>
-                <hr>
-                <p>
-                    yourbestfriend@beautycodex.com <br>
-                    +51 923 524 695 | Website
-                </p>
-                
-            </section>
-        </div>
-        <div class="join">
-            <button>Join us!</button>
-            <p>Discover how to joing the chamber of commerce and how it will benefit your organization!</p>
-        </div>
-        
-        
+    <main class="join-main">
+        <!--
 
+
+
+
+Create a new page named "thankyou.html" that expresses gratitude for filling out the form. This page should load when the user has successfully 
+submitted the form. The design should follow your site pattern and does not need to have a lot of actual content.  -->
+        
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name*: <input type="text" name="fname" required></label>
+                <label class="top">Last Name*: <input type="text" name="lname" required></label>
+                <!-- A business position title field of type text that is not required but only accepts alpha characters, hyphens,
+                     and spaces with a minimum of seven 
+                     characters using a regular expression --Links to an external site-- pattern. -->
+                <label class="top">Business Position: <input type="text" name="business" pattern="^[A-Za-z- ]{7,}$"></label>
+                <label class="top">E-mail*: <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Cellphone Number*: <input type="tel" name="tel" required></label>
+                <label class="top">Business Title*: <input type="text" name="title" required></label>
+                <!-- A membership level selection using an appropriate form field of your choosing to allow the user to select a membership level.
+                There are four membership levels.
+                Membership level benefits should be displayed to the side of the form in larger views.
+                NP Membership is for non profit organizations and there is no fee.
+                Bronze Membership.
+                Silver Membership
+                Gold Membership
+                This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights),
+                event discounts, etc. -->
+                <div>Membership Levels:</div>
+                <label class="sbs"><input type="radio" name="membership" value="np">NP Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
+
+                <label class="top">Business Description: <textarea name="description" id="description"></textarea></label>
+
+                <!-- A hidden field that contains the current date and time that the form was loaded by the user. -->
+                <input id="time" name="time" type="hidden" value="xm234jq">
+
+
+            </fieldset>
+
+            <input type="submit" value="Join the Chamber!" class="submitBtn">
+        </form>
 
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div class="footerContainer">
@@ -158,6 +144,7 @@
     </footer>
     <script src="scripts/chamber.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/join.js"></script>
     
 </body>
 </html>
