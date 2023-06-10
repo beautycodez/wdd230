@@ -379,3 +379,7 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+.thanks h1 {
+    font-size: 10rem;
+}
