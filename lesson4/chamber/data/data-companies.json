@@ -7,7 +7,7 @@
         "phone": "281-558-1838",
         "website": "www.facebook.com",
         "image": "https://images.pexels.com/photos/267399/pexels-photo-267399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "membership-level": "Gold Membership"
+        "membership": "Gold Membership"
     },
     {
         "number": 2,
@@ -16,7 +16,7 @@
         "phone": "310-285-9095",
         "website": "https://twitter.com/",
         "image": "https://images.pexels.com/photos/5417837/pexels-photo-5417837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "membership-level": "Gold Membership"
+        "membership": "Gold Membership"
     },
     {
         "number": 3,
@@ -25,7 +25,7 @@
         "phone": "801-908-9354",
         "website": "https://Amazon.com/",
         "image": "https://images.pexels.com/photos/16158536/pexels-photo-16158536/free-photo-of-paquete-porche-entrega-logistica.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "membership-level": "Silver Membership"
+        "membership": "Silver Membership"
     },
     {
         "number": 4,
@@ -34,7 +34,7 @@
         "phone": "218-841-1276",
         "website": "https://Walmart.com/",
         "image": "https://images.pexels.com/photos/10948490/pexels-photo-10948490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "membership-level": "Bronze Membership"
+        "membership": "Bronze Membership"
     },
     {
         "number": 5,
@@ -43,7 +43,7 @@
         "phone": "401-496-3461",
         "website": "https://www.coca-cola.com.pe/",
         "image": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "membership-level": "Gold Membership"
+        "membership": "Gold Membership"
     },
     {
         "number": 6,
@@ -52,7 +52,7 @@
         "phone": "817-218-6644",
         "website": "https://www.viabcp.com/",
         "image": "https://images.pexels.com/photos/351264/pexels-photo-351264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "membership-level": "Bronze Membership"
+        "membership": "Bronze Membership"
     },
     {
         "number": 7,
@@ -61,7 +61,7 @@
         "phone": "214-631-0500",
         "website": "https://musicmarket.com.pe/",
         "image": "https://images.pexels.com/photos/16197995/pexels-photo-16197995/free-photo-of-pared-musica-ingles-paredes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "membership-level": "Gold Membership"
+        "membership": "Gold Membership"
     },
     {
         "number": 8,
@@ -70,7 +70,7 @@
         "phone": "978-448-8569",
         "website": "https://norkys.pe/",
         "image": "https://images.pexels.com/photos/16107645/pexels-photo-16107645/free-photo-of-plato-comida-pollo-carne.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "membership-level": "Silver Membership"
+        "membership": "Silver Membership"
     },
     {
         "number": 9,
@@ -79,7 +79,7 @@
         "phone": "360-427-6114",
         "website": "https://www.kfc.com.pe/",
         "image": "https://images.pexels.com/photos/3028127/pexels-photo-3028127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "membership-level": "Gold Membership"
+        "membership": "Gold Membership"
     }
 ]
 }

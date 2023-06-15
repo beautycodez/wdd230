@@ -33,8 +33,7 @@ const displayCompanies = (companies) => {
         // Build the paragraph
         p.innerHTML = `<strong>Address</strong>: ${company.address} <br>
                        <strong>Phone</strong>: ${company.phone} <br> 
-                       <strong>website</strong>: ${company.website} <br> 
-                       <strong>Membership Level</strong>: ${company.membership-level} <br> 
+                       <strong>website</strong>: ${company.website} ${company.membership-level}<br> 
                        `;
         // Append the section(card) with the created elements
         card.appendChild(h2);
