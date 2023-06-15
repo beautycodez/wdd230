@@ -28,13 +28,17 @@ const displayCompanies = (companies) => {
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '200');
         portrait.setAttribute('height', '250');
-        portrait.setAttribute('class', "prophet-pictures");
+        portrait.setAttribute('class', "company-pictures");
 
         // Build the paragraph
         p.innerHTML = `<strong>Address</strong>: ${company.address} <br>
                        <strong>Phone</strong>: ${company.phone} <br> 
-                       <strong>website</strong>: ${company.website} ${company.membership-level}<br> 
+                       <strong>website</strong>: ${company.website}<br> 
+                       <strong>Membership</strong>: ${company.membership}
                        `;
+
+        // Build the cards
+        card.setAttribute('class', "card-sections")
         // Append the section(card) with the created elements
         card.appendChild(h2);
         card.appendChild(portrait);

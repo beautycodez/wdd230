@@ -383,3 +383,31 @@ form label.top input:required:valid {
 .thanks h1 {
     font-size: 10rem;
 }
+/* ------------------------------directory----------------------------- */
+.directory-main {
+    display: block;
+}
+.directory-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    text-align: center;
+    background-color: #E6EFE9;
+    height: 100%;
+}
+.company-pictures {
+    box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.6);
+    object-fit: cover;
+    width: 90%;
+    
+}
+.card-sections {
+    background-color: #b0caca
+    ;
+    padding: 0px 20px 50px 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.card-sections h2 {
+    color: #D64045;
+}
