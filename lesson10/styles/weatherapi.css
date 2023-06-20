@@ -1,0 +1,36 @@
+body {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+h1{
+    background-color: #00ffff;
+    border-radius: 10%;
+    padding: 10px 0px;
+    margin-bottom: 50px;
+    box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.9);
+}
+p{
+    display: block;
+    color: red;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+}
+p:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+h2 {
+    margin-top: 50px;
+}
+#weather-icon {
+    width: 100px;
+}
+figure {
+    background-color: yellow;
+    padding: 20px 0px;
+    border-radius: 20px;
+}
