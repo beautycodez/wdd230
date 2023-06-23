@@ -215,14 +215,17 @@ main > div {
 .weather h1{
     color: #D64045;
 }
-.weather span {
-    font-size: 4rem;
+#weather-icon {
+    width: 80px;
 }
 .weather-msg {
     font-weight: bold;
     text-align: right;
     margin-right: 15px;
-
+}
+.weather-temp {
+    display: flex;
+    align-items: center;
 }
 #temperature {
     font-size: 1.5rem;

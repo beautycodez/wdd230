@@ -76,8 +76,18 @@
         padding: 0px;
         box-sizing: border-box;
     }
-
-
+    .weather h1 {
+        margin-bottom: 0;
+    }
+    .weather-temp {
+        margin: 0;
+    }
+    figure {
+        margin-bottom: 5px;
+    }
+    figcaption {
+        font-size: 0.9rem;
+    }
     .join {
         display: block;
         grid-row: 4;
