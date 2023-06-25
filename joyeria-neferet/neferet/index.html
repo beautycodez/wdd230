@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neferet Jewelry | Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="index.html" id="logo_link">
+                <picture>
+                    <img class="logo" src="images/logo.jpg" alt="Neferet Logo"> 
+                </picture>
+            </a>
+            <nav>
+            <button id="hamburgerBtn">&#9776</button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+
+                </ul>
+                
+            </nav>        
+        </header>
+
+        <div class="hero">
+            <picture class="hero-picture">
+                <img class="hero-img" src="images/home-6.jpg" alt="ring">
+            </picture>
+    
+            <section class="hero-msg">
+                <h1 class="home-title">The perfect ring</h1>
+                <h4>for a perfect day</h4>
+            </section>
+        </div>
+
+        <main>
+            <div id="lightbox">
+                <h2 id="tittle-lightbox">Our Products</h2>
+                <div id="lightbox_content">
+                <!-- Images used to open the lightbox -->
+                    <div class="row">
+                        <picture class="column" id="img1">
+                            <img src="images/img1.jpg" alt="ring with purple gem" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        </picture>
+
+                        <picture class="column" id="img2">
+                            <img src="images/img2.jpg" alt="pink teardrop gemstone ring" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        </picture>
+                        <picture class="column" id="img3">
+                            <img src="images/img3.jpg" alt="ring with pink gem" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        </picture>
+                        <picture class="column" id="img4">
+                            <img src="images/img4.jpg" alt="ring with 6 gems" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        </picture>
+                        <picture class="column" id="img5">
+                            <img src="images/img5.jpg" alt="ring with heart gem" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                        </picture>
+                    </div>
+                    
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/img1-copia.jpg" alt="ring with purple gem" style="height: 100%; margin-left: 300px;">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/img2-copia.jpg" alt="pink teardrop gemstone ring" style="height:100%; margin-left: 350px;">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/img3-copia.jpg" alt="ring with pink gem" style="height:100%; margin-left: 300px;">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/img4-copia.jpg" alt="ring with 6 gems" style="height:100%; margin-left: 300px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/img5-copia.jpg" alt="ring with heart gem" style="height:100%; margin-left: 350px;">
+                    </div>
+                
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                
+                
+                    <!-- Thumbnail image controls -->
+                    <div class="column" >
+                        <img class="demo" src="images/img1.jpg" onclick="currentSlide(1)" alt="ring with purple gem">
+                    </div>
+                
+                    <div class="column" >
+                        <img class="demo" src="images/img2.jpg" onclick="currentSlide(2)" alt="pink teardrop gemstone ring">
+                    </div>
+                
+                    <div class="column" >
+                        <img class="demo" src="images/img3.jpg" onclick="currentSlide(3)" alt="ring with pink gem">
+                    </div>
+                
+                    <div class="column" >
+                        <img class="demo" src="images/img4.jpg" onclick="currentSlide(4)" alt="ring with 6 gems">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/img5.jpg" onclick="currentSlide(5)" alt="ring with heart gem">
+                    </div>
+                
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+
+        <div class="home-grid">
+            <div id="background"></div>
+            <img class="customized" src="images/home_10.jpeg" alt="collar">
+            <section class="msg">
+                <h2>Customize Your Jewel</h2>
+                <p>with us...</p>
+            </section>
+        </div>
+
+        <div class="blog">
+            <section class="section-blog">
+                <h2 id="tittle-onblog">On our Blog:</h2>
+                <div id="blog-content">
+                        <h4>What necklace to choose for each occasion</h4>
+                        <p>Do you plan to give away a necklace on these dates but you don't know which one? Are you one of those who lose patience when choosing which necklace to wear? Calm. You are not alone in this. 
+                            Enter that we show you the diversity of styles of necklaces! And on what occasion could you use them!
+                            <br><a class="enlace" href="blog.html">Click here! to continue reading...</a>
+                        </p>
+                        <a href="blog.html" class="blog-picture">
+                            <picture>
+                                <img id="collar" src="images/blog-5.JPG" alt="collar">
+                            </picture>
+                            
+                        </a>
+
+                </div>
+            </section>
+        </div>
+
+
+        </main>
+
+        <footer>
+            <p>Neferet Jewelry &copy; 2022 </p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+
+    </div>
+    
+
+
+    <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    <script src="scripts/homepage.js"></script>        
+</body>
+</html>

@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&display=swap');
+
+header{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr auto;
+    background-color: #000000;
+    text-align: center;
+}
+
+.logo {
+    width: 175px;
+}
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    width: 100%;
+}
+nav a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:#B68E3E;
+    text-decoration:none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 120%;
+    font-family:"Cinzel";
+}
+nav a:hover{
+    width: 100%;
+    background-color: #B68E3E;
+    color:#000000;
+    font-size: 120%;
+
+}
+header nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    grid-column: 1;
+    text-align: left;
+}
+header nav ul {
+    display: none;
+    list-style: none;
+}
+header nav ul.open {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+header nav ul.open li {
+    display: block;
+    list-style: none;
+    width: 100%;
+}
+
+
+/* --------------------------Hero---------------------------- */
+.hero {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.hero-picture {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: -1;
+}
+
+.hero-img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    object-fit: cover;
+    
+}
+.hero-msg {
+    grid-column: 1;
+    grid-row: 1;
+}
+.hero-msg h1{
+    display:block;
+    width: fit-content;
+    text-align: left;
+    text-shadow: 0 0 3px #DAD6D2;
+    font-size: 1rem;
+    background-color: white;
+}
+.hero-msg h4 {
+    display:block;
+    width: fit-content;
+    background-color: black;
+    text-align: left;
+    color: #B68E3E;
+    font-size:1em;
+
+}
+/* ---------------------------Hero END------------------------- */
+/* -----------------------MAIN ----------------------------- */
+main{
+    display: block;
+}
+
+#lightbox{
+    display: block;
+    background-color: #DAD6D2;
+}
+
+#tittle-lightbox{
+    margin: 0;
+    padding: 150px 0px 50px 0px;
+    font-size:2em;
+    color: #B68E3E;
+    text-align: center;
+}
+#lightbox_content{
+    display: block;
+    
+}
+.row {
+    display: flex;
+    flex-direction: column;
+}
+.column {
+    width: 130px;
+    margin: 10px auto;
+    border: 1px solid black;
+    box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.5);
+}
+.column img{
+    width: 130px;
+    height: 200px;
+}
+.home-grid{
+    display:grid;
+    grid-template-rows: 1fr auto;
+    background-color: #B68E3E;
+}
+.customized{
+    width: 95%;
+    grid-row: 2;
+    grid-column: 1;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#background{
+    width: 80%;
+    height: 90%;
+    grid-column: 1;
+    grid-row: 1/3;
+    z-index: -1;
+}
+.msg{
+    width: 90%;
+    height: 90%;
+    background-color: #DAD6D2;
+    line-height: 3em;
+    box-shadow: 2px 2px 5px #6f7364;
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.msg h2{
+    color:#B68E3E;
+    font-family:"Cinzel";
+    font-size: 3em;
+}
+.msg p{
+    color:#B68E3E;
+    font-size: 3em;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.blog{
+    background-color: #DAD6D2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+.section-blog {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#tittle-onblog{
+    font-size:2em;
+    color: #B68E3E;
+    width: 90%;
+}
+#blog-content{
+    background-color: #78613F;
+    color: #EEDF99;
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#blog-content h4, #blog-content p{
+    color: #EEDF99;
+}
+.enlace{
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+.blog-picture {
+    display: block;
+}
+#blog-content picture{
+    width: 100%;
+}
+#blog-content img{
+    margin-bottom: 40px;
+    width: 100%;
+}
+/* ---------------------MAIN END------------------------------------- */
+footer .social img {
+    padding-top: 15px;
+}
+footer{
+    background-color: #000000;
+    color:#B68E3E;
+    padding: 25px 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p {
+    text-align: center;
+}
+footer a{
+   color: #B68E3E;
+   text-decoration:none;
+}
+footer a:hover{
+    color:#EEDF99;
+}
+
+footer p {
+    font-size: 1.2em;
+}    
+
+footer p a:hover {
+    text-decoration: underline;
+}  
+
+
+
+
+.home-title{
+    color:#B68E3E;
+    font-family:"Cinzel";
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+
+h4,h2{
+    color:#B68E3E;
+    font-family:"Cinzel";
+    
+}
+
+p{
+    font-family: "Montserrat";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*lightbox inicio*/
+
+#img1{
+    grid-column: 1/2;
+}
+
+#img2{
+    grid-column: 2/3;
+}
+
+#img3{
+    grid-column: 3/4;
+}
+
+#img4{
+    grid-column: 4/5;
+}
+
+#img5{
+    grid-column: 5/6;
+}
+
+/* .row > .column {
+    padding: 0 8px;
+  } */
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  /* .column {
+    float: left;
+    width: 15%;
+    
+  } */
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+    background-color: #000000;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  /*lightbox fin*/
+
+    .img-blog{
+        width: 450px;
+        height: 450px;
+}
+
+
+  #img-contact{
+    width: 200px;
+    height: 400px;
+    text-align: right;
+  }
+
+
+
+  .content-blog{
+    margin-top: 50px;
+    background-color: #78613F;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.content-aboutus{
+    background-color: #DAD6D2;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.content-aboutus h2, .content-aboutus h4{
+    
+    margin-left: 100px;
+    font-family: "cinzel";
+}
+
+.content-aboutus h2{
+    font-size:180%;
+    margin-bottom: -10px; 
+}
+
+.content-aboutus h4{
+    font-size:110%; 
+    margin-bottom: 50px; 
+}
+
+
+#tittle-blog{
+    grid-column: 1/3; 
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family:"Cinzel";
+}
+
+.content-right{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content-right p{
+    grid-column: 1/2;
+    margin: 100px;
+    font-family:"Montserrat";
+}
+
+.content-right img{
+    grid-column: 2/3;
+    margin-right: 100px;
+}
+
+.content-left{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.content-left p{
+    grid-column: 2/3;
+    margin: 100px;
+}
+
+.content-left img{
+    grid-column: 1/2;
+    margin-left: 100px;
+}
+
+.img-blog{
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+#contact-content{
+    background-color: #78613F;
+    color: #EEDF99;
+    grid-row: 2/3;
+    grid-column: 2/4;
+    margin-top: -100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+
+
+.contact-content-text{
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.contact-content-img{
+    margin-top: 20px; 
+}
+
+
