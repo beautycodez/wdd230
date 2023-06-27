@@ -93,14 +93,16 @@ header nav ul.open li {
 .hero-msg {
     grid-column: 1;
     grid-row: 1;
+    margin-top: 50px;
 }
 .hero-msg h1{
     display:block;
     width: fit-content;
     text-align: left;
     text-shadow: 0 0 3px #DAD6D2;
-    font-size: 1rem;
-    background-color: white;
+    font-size: 1.2rem;
+    background-color: black;
+    margin-left: 10px;
 }
 .hero-msg h4 {
     display:block;
@@ -109,19 +111,57 @@ header nav ul.open li {
     text-align: left;
     color: #B68E3E;
     font-size:1em;
-
+    margin-left: 10px;
 }
 /* ---------------------------Hero END------------------------- */
 /* -----------------------MAIN ----------------------------- */
 main{
     display: block;
 }
-
+.category {
+    width: 70%;
+    margin: 0 auto;
+}
+.category h1 {
+    text-align: center;
+    color: #B68E3E;
+}
+.category section {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    /* border: 1px solid black; */
+    background-color: #F2F2F2;
+    box-shadow: 1px 2px 1px 2px rgba(0,0,0,0.4);
+}
+.category section picture {
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+}
+.category section picture  img{
+    width: 100%;
+}
+.category section h2 {
+    display: block;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    background-color: #B68E3E;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+.category section h3 {
+    text-align: center;
+}
 #lightbox{
     display: block;
     background-color: #DAD6D2;
 }
-
 #tittle-lightbox{
     margin: 0;
     padding: 150px 0px 50px 0px;
