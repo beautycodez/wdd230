@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&display=swap');
 
+h1 {
+    font-family:"Cinzel" ;
+}
 header{
     display: grid;
     width: 100%;
@@ -600,4 +603,30 @@ p{
     margin-top: 20px; 
 }
 
-
+/* ------------------------anillos -----------------------*/
+.main-anillos {
+    background-color: #DAD6D2;
+}
+.muestrario-anillos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+    /* background-color: #B68E3E; */
+}
+.muestrario-anillos section {
+    width: 80%;
+    margin-bottom: 50px;
+    background-color: #f0ece8;
+    text-align: center;
+    padding: 10px;
+}
+.muestrario-anillos section h1 {
+    color: #B68E3E;
+}
+.muestrario-anillos section picture img {
+    width: 90%;
+    box-shadow: 1px 4px 1px 4px rgb(108, 105, 105);
+    border-radius: 10%;
+}
