@@ -141,9 +141,9 @@
 
 
 .contact-form {
-    display:flex;
-    margin-left: 100px;
+    display: flex;
     max-width: 500px;
+    justify-content: center;
 }
 .contact-us {
     max-width: 200px;

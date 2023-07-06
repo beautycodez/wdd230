@@ -486,6 +486,7 @@ form label.top input:required:valid {
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-left: 0px;
 }
 .contact-form form {
     text-align: center;
