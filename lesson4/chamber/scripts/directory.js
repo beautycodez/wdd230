@@ -3,6 +3,7 @@ const url = 'https://beautycodez.github.io/wdd230/lesson4/chamber/data/data-comp
 async function getCompaniesData() {
     const response = await fetch(url);
     const data = await response.json();
+    console.log(data);
     // console.table(data.prophets);  // note that we reference the prophet array of the data object given the structure of the json file
     displayCompanies(data.companies);
   }
@@ -47,3 +48,5 @@ const displayCompanies = (companies) => {
         cards.appendChild(card);
     }); // end of forEach loop
 } // end of function expression
+
+

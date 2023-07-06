@@ -93,7 +93,7 @@ nav ul.open {
 }
 .link:hover {
     text-decoration: none;
-    color: #073B3A;;
+    color: black;
 }
 nav ul.open li {
     display: block;
@@ -104,6 +104,9 @@ nav ul.open li {
     color: #073B3A;
     text-align: center;
     padding:20px 0;
+}
+nav ul.open li a {
+    color: black;
 }
 nav ul.open li:hover {
     background-color: rgb(78, 78, 200);
@@ -186,6 +189,11 @@ main > div {
     position: absolute;
     top: 20px;
     color:#230903;
+    background-color: white;
+    padding: 10px;
+    left: 20px;
+    box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.9);
+    font-weight: bold;
 }
 .join-btn {
     position: absolute;
@@ -248,6 +256,7 @@ main hr{
 }
 .news-release p {
     font-size: 0.8em;
+    text-align: justify;
 }
 .spotlights {
     background-color: #E6EFE9;
@@ -259,8 +268,18 @@ main hr{
     margin: 0 auto;
     border: 1px solid black;
 }
+.spotlights section picture {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
 .spot-img {
-    width: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 #section1 {
     margin-top:20px;
@@ -359,6 +378,7 @@ form label.top input, form label.top textarea {
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1);
+    box-sizing: border-box;
 }
 form label.sbs {
     display: block;
@@ -400,9 +420,8 @@ form label.top input:required:valid {
 }
 .company-pictures {
     box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.6);
-    object-fit: cover;
     width: 90%;
-    
+    object-fit:cover;
 }
 .card-sections {
     background-color: #b0caca
@@ -414,3 +433,76 @@ form label.top input:required:valid {
 .card-sections h2 {
     color: #D64045;
 }
+/* ----------------------------------------------contact-------------------------------------------------------- */
+.contact-body {
+    background: url(/lesson4/chamber/images/contact-wallpaper.webp);
+}
+
+.contact-hero-container {
+    display: block;
+    position: relative;
+}
+.contact-hero-container picture {
+    width: 100%;
+    height: 300px;
+}
+.contact-hero-container picture img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.contact-hero-container h1 {
+    position: absolute;
+    top: 1px;
+    margin: 30px 35%;
+    background-color: #D64045;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+}
+.contact-hero-container h1:hover {
+    background-color: white;
+    color: #D64045
+}
+.contact-main {
+    display: block;
+    height: fit-content;
+}
+.contact-form {
+    display: flex;
+    width: 100%;
+    /* max-width: 290px; */
+    padding: 5px;
+    background: white;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact-form form {
+    text-align: center;
+}
+.contact-us {
+    text-align: left;
+    padding-left:20px;
+    margin-bottom: 100px;
+}
+.contact-us h1 {
+    color: red;
+}
+.contact-us p {
+    text-decoration: underline;
+    color: rgb(89, 6, 6);
+}
+
+.google-maps {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.google-maps iframe {
+    width: 100%;
+}
+
+
+

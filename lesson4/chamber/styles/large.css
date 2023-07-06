@@ -56,6 +56,9 @@
         grid-row: 1;
         display: block;
     }
+    .event p {
+        font-size: 1.05rem;
+    }
     .weather {
         grid-column: 2;
         grid-row: 2;
@@ -91,29 +94,28 @@
     }
     .spotlights section {
         height: 280px; 
-        box-shadow: 1px 2px 1px 2px rgba(0,0,0,0.5);
     }
     #section1 {
         margin-bottom: 0px;
-        box-shadow: 1px 2px 1px 2px rgba(0,0,0,0.5);
+        margin-left: 9.333px;
     }
     #section2 {
         margin-bottom: 0px;
         margin-top: 0px;
         margin-left: auto;
-        box-shadow: 1px 2px 1px 2px rgba(0,0,0,0.5);
+        margin-right: 9.333px;
     }
     #section3 {
         display: block;
         margin-bottom: 10px;
     }
-    .spot-img {
-        width: 100px;
-    }
     .join {
         grid-column: 2;
         grid-row: 3;
         height: 100%;
+    }
+    .join p {
+        font-size: 1.1rem;
     }
     .news-release {
         grid-column: 3;
@@ -134,4 +136,15 @@
 /* ------------------------join------------------------- */
 .join-main {
     display: flex;
+}
+
+
+
+.contact-form {
+    display:flex;
+    margin-left: 100px;
+    max-width: 500px;
+}
+.contact-us {
+    max-width: 200px;
 }

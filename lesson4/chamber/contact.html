@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join</title>
+    <title>Document</title>
     <link rel="icon" href="images/favicon-16.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
-<body>
+<body class="contact-body">
     <header>
         <div class="logo">
             <picture>
@@ -41,8 +42,7 @@
                             <path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;" />
                         </g>
                     </g>
-                </svg></a>
-            
+                </svg></a>   
         </div>
         
         <nav id="navigation">
@@ -56,70 +56,36 @@
         </nav>
         <p></p>
     </header>
-    <div class="banner">
-        <p id="banner-msg">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
+    <div class="contact-hero-container">
+        <picture>
+            <img src="images/contact-hero-1280.webp" alt="Machu Picchu picture">
+        </picture>
+        <h1>CONTACT US</h1>
     </div>
-    
-    <main class="join-main">
-        <!--
 
-
-
-
-Create a new page named "thankyou.html" that expresses gratitude for filling out the form. This page should load when the user has successfully 
-submitted the form. The design should follow your site pattern and does not need to have a lot of actual content.  -->
-        
-        <form action="thankyou.html" method="get">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">First Name*: <input type="text" name="fname" required></label>
-                <label class="top">Last Name*: <input type="text" name="lname" required></label>
-                <!-- A business position title field of type text that is not required but only accepts alpha characters, hyphens,
-                     and spaces with a minimum of seven 
-                     characters using a regular expression --Links to an external site-- pattern. -->
-                <label class="top">Business Position: <input type="text" name="business" pattern="^[A-Za-z- ]{7,}$"></label>
-                <label class="top">E-mail*: <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Cellphone Number*: <input type="tel" name="tel" required></label>
-                <label class="top">Business Title*: <input type="text" name="title" required></label>
-                <!-- A membership level selection using an appropriate form field of your choosing to allow the user to select a membership level.
-                There are four membership levels.
-                Membership level benefits should be displayed to the side of the form in larger views.
-                NP Membership is for non profit organizations and there is no fee.
-                Bronze Membership.
-                Silver Membership
-                Gold Membership
-                This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights),
-                event discounts, etc. -->
-                <div>Membership Levels:</div>
-                <label class="sbs"><input type="radio" name="membership" value="np">NP Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
-
-                <label class="top">Business Description: <textarea name="description" id="description"></textarea></label>
-
-                <!-- A hidden field that contains the current date and time that the form was loaded by the user. -->
-                <input id="time" name="time" type="hidden" value="xm234jq">
-
-
-            </fieldset>
-
-            <input type="submit" value="Join the Chamber!" class="submitBtn">
-        </form>
-
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="contact-main">
+        <div class="contact-form">
+            <form action="thankyou.html">
+                <h1>Contact Form</h1>
+                <label class="top">Name*<input type="text" name="fname" required></label>
+                <label class="top">E-mail Address*<input type="email" name="" required></label>
+                <label class="top">Question/Concern*: <textarea name="description" id="description"></textarea></label>
+            <input type="submit" value="Send my Form!" class="submitBtn">
+            </form>
+        </div>
+        <div class="contact-us">
+            <h1>Contact us</h1>
+            <h2>Address</h2>
+            <Address>Los Geranios 663, Urb. los Jazmines, Lima</Address>
+            <h2>Phone</h2>
+            <p>+51 923-584-695</p>
+            <h2>Email</h2>
+            <p>info@NarutoCC.org</p> 
+        </div>
+        <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.0228437660844!2d-77.00529272726413!3d-11.972920188258138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5677b7c8549%3A0x6615911b274f310c!2sLos%20Geranios%20665%2C%20Lima%2015419!5e0!3m2!1ses-419!2spe!4v1688597106467!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 
 
 
@@ -144,8 +110,6 @@ submitted the form. The design should follow your site pattern and does not need
 
     </footer>
     <script src="scripts/chamber.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/join.js"></script>
-    
+    <script src="scripts/windchill.js"></script>    
 </body>
 </html>
