@@ -404,7 +404,14 @@ form label.top input:required:valid {
 }
 
 .thanks h1 {
-    font-size: 10rem;
+    font-size: 2rem;
+    background-color: #E6EFE9;
+    padding: 200px 50px 200px 50px;
+    text-align: center;
+    color: #D64045;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 /* ------------------------------directory----------------------------- */
 .directory-main {
