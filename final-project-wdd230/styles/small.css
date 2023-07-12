@@ -235,3 +235,97 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: hsl(0,50%,93%,1);
 }
+/* ------------------------call to action ------*/
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.grid section > * {
+	margin: 0.1rem;
+}
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    width: 150px;
+    height: 150px;
+}
+.grid p {
+    height: 80px;
+}
+.grid button {
+    background-color: #FE621D;
+    box-shadow: 1px 2px  1px 2px rgba(0,0,0,0.5);
+}
+.grid button a {
+    text-decoration: none;
+    font-size: 0.85rem;
+	color: white;
+	letter-spacing: 1.1pt;
+    padding: 1rem;
+}
+.list-link {
+    display: none;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 100px auto;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+    font-size: 0.85rem;
+}
+.list section p {
+    font-size: 0.8rem;
+    border: none;
+    width: 100%;
+    padding-right: 20px;
+}
+.list section button {
+    display: none;
+}
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+.day1, .day2, .day3 {
+    font-size: 0.85rem;
+}
