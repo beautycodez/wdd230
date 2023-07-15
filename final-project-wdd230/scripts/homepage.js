@@ -80,7 +80,7 @@ const forecast = document.querySelector('.forecast');
 const humidity = document.querySelector(".humidity");
 
 
-const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=f093ffd9fe067670b40d9ac069415766&units=imperial"
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=f093ffd9fe067670b40d9ac069415766&units=metric"
 
 async function apiFetch() {
     try {
@@ -100,7 +100,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults (weatherData){
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)} F°</strong>`;
+  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)} C°</strong>`;
   condition.innerHTML = weatherData.weather[0].description;
   humidity.innerHTML = weatherData.main.humidity;
 
@@ -113,7 +113,7 @@ function displayResults (weatherData){
 
 
 // -----------------forecast------------
-const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=f093ffd9fe067670b40d9ac069415766&units=imperial"
+const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=f093ffd9fe067670b40d9ac069415766&units=metric"
 
 const day1 = document.querySelector(".day1");
 const day2 = document.querySelector(".day2");
@@ -156,11 +156,30 @@ function displayResults2 (weatherData){
   var finalDate3 =new Date(date3).toLocaleDateString('en-us', { weekday:"long", month:"short", day:"numeric"}) 
   day3.innerHTML = finalDate3;
 
-  forecast1.innerHTML = `${weatherData.list[4].main.temp} F°`
-  forecast2.innerHTML = `${weatherData.list[12].main.temp} F°`
-  forecast3.innerHTML = `${weatherData.list[19].main.temp} F°`
-
-
-
+  forecast1.innerHTML = `${weatherData.list[4].main.temp} C°`
+  forecast2.innerHTML = `${weatherData.list[12].main.temp} C°`
+  forecast3.innerHTML = `${weatherData.list[19].main.temp} C°`
 }
+// -------------------local storage----------------------
+const orderNumber = document.querySelector("#number-orders");
+var drinkNumber = localStorage.getItem("Drinks");
+if (drinkNumber == null){
+  drinkNumber = 0;
+  orderNumber.innerHTML = drinkNumber + "😭";
+}else {
+  orderNumber.innerHTML = drinkNumber + "🍹";
+}
+// -----------------------last modified--------------
+var lastModified = document.querySelector(".last-modified-html");
 
+let lastModi = new Date(document.lastModified);
+const day = lastModi.getDate();
+const month = lastModi.getMonth();
+const year = lastModi.getFullYear();
+const hour = lastModi.getHours();
+const min = lastModi.getMinutes();
+const sec = lastModi.getSeconds();
+
+lastModified.innerHTML += `${month + 1}/${day}/${year} ${hour}:${min}:${sec}`;
+
+document.querySelector("#copyright").innerHTML+=` ${year}`;
