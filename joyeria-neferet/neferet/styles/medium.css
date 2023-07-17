@@ -10,10 +10,23 @@
         width: 100%;
     }
     .category  {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
     .category section:nth-child(1) {
         grid-column: 1;
         grid-row: 1;
+    }
+    .category section:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .category section:nth-child(3) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .category section:nth-child(4) {
+        grid-column: 2;
+        grid-row: 2;
     }
 }
