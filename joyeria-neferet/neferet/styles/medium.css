@@ -9,9 +9,13 @@
         padding-left: 5px;
         width: 100%;
     }
-    .category  {
+    .hero-msg {
+        margin-top: 200px;
+    }
+    .category-section  {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
     .category section:nth-child(1) {
         grid-column: 1;
@@ -28,5 +32,24 @@
     .category section:nth-child(4) {
         grid-column: 2;
         grid-row: 2;
+    }
+    .category section {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        background-color: #F2F2F2;
+        box-shadow: none;
+    }
+    .category section picture {
+        width: 100%;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .category section picture  img{
+        width: 100%;
+    }
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
