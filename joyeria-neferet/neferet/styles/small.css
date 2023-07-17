@@ -9,12 +9,15 @@ header{
     grid-template-rows: 1fr auto;
     background-color: #000000;
     text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100% ;
+    z-index: 1;
 }
-
 .logo {
     width: 175px;
 }
-
 #logo_link{
     padding-top: 5px;
     justify-self: center;
@@ -54,6 +57,18 @@ header nav button {
     grid-column: 1;
     text-align: left;
 }
+header nav button span:nth-child(1) {
+    display: block;
+}
+header nav button span:nth-child(2) {
+    display: none;
+}
+header nav button.open span:nth-child(1) {
+    display: none;
+}
+header nav button.open span:nth-child(2) {
+    display: block;
+}
 header nav ul {
     display: none;
     list-style: none;
@@ -69,23 +84,19 @@ header nav ul.open li {
     list-style: none;
     width: 100%;
 }
-
-
 /* --------------------------Hero---------------------------- */
 .hero {
+    margin-top: 200px;
     display: grid;
-
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-
 .hero-picture {
     width: 100%;
     grid-column: 1;
     grid-row: 1;
     z-index: -1;
 }
-
 .hero-img{
     width: 100%;
     height: 100%;
