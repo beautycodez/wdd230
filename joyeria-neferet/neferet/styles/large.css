@@ -71,9 +71,22 @@
         margin-top: 0px ;
         background-color: #DAD6D2;
         height: 260.16px;
+        font-size: 3em;
+        box-shadow: 2px 2px 5px #6f7364;
+    }
+    .home-picture {
+        background-color: #78613F;
+        width: 90%;
+        height: 509.438px;
+        margin: 0 auto;
+    }
+    .home-picture picture {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
     }
     .customized {
-        width: 90%;
+        width: 100%;
         margin-bottom: 0px;
     }
     #blog-content {
