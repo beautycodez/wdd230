@@ -54,8 +54,30 @@
         grid-column: 1/2;
         grid-row: 3;
     }
+    .msg {
+        height: 300px;
+    }
     .blog {
         grid-column: 2/3;
         grid-row: 3;
+        background-color: #B68E3E;
+    }
+    .section-blog {
+        margin-bottom: 0px;
+    }
+    #tittle-onblog {
+        padding: 39.840px 0px 0px 0px;
+        text-align: center;
+        margin-top: 0px ;
+        background-color: #DAD6D2;
+        height: 260.16px;
+    }
+    .customized {
+        width: 90%;
+        margin-bottom: 0px;
+    }
+    #blog-content {
+        margin: 0px;
+        padding: 0px;
     }
 }
