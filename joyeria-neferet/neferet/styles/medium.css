@@ -39,14 +39,21 @@
         grid-template-rows: 1fr auto;
         background-color: #F2F2F2;
         box-shadow: none;
+        max-width: 235px;
+
     }
     .category section picture {
-        width: 100%;
         grid-row: 1;
         grid-column: 1;
     }
+    .category section picture a {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     .category section picture  img{
         width: 100%;
+        height: 100%;
     }
     .row {
         flex-direction: row;
