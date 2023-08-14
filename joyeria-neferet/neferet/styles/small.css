@@ -200,14 +200,28 @@ main{
     padding: 0px 50px 50px 50px;
 }
 .column {
-    width: 130px;
+    width: 100%;
+    height: 100px;
     margin: 10px auto;
     border: 1px solid black;
     box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.5);
 }
 .column img{
-    width: 130px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.column1 {
+    width: 200px;
     height: 200px;
+    margin: 10px auto;
+    border: 1px solid black;
+    box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.5);
+}
+.column1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .home-grid{
     display:grid;
@@ -463,11 +477,14 @@ p{
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: black;
     margin: auto;
     padding: 0;
     width: 90%;
+    height: 100%;
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
   }
   
   /* The Close Button */
@@ -491,8 +508,22 @@ p{
   .mySlides {
     display: none;
     background-color: #000000;
+    height: 57%;
   }
-  
+  .modal-picture {
+    display: block;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .modal-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #picture5 {
+    object-position: 0px -500px;
+  }
   /* Next & previous buttons */
   .prev,
   .next {
@@ -551,11 +582,17 @@ p{
   img.hover-shadow {
     transition: 0.3s;
   }
-  
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
+.example-modals {
+    display: flex;
+    background-color: rgb(209, 204, 204);
+    border-radius: 5px;
+    max-width: 700px;
+    margin: 0 auto;
+    gap:10px;
+}
 
   /*lightbox fin*/
 
@@ -697,3 +734,4 @@ p{
     box-shadow: 1px 4px 1px 4px rgb(108, 105, 105);
     border-radius: 10%;
 }
+/* ----------------------------------------------------modal-------------------------------------------------- */

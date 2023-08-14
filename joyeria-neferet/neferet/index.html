@@ -108,20 +108,20 @@
                 <div id="lightbox_content">
                 <!-- Images used to open the lightbox -->
                     <div class="row">
-                        <picture class="column" id="img1">
+                        <picture class="column1" id="img1">
                             <img src="images/img1.jpg" alt="ring with purple gem" onclick="openModal();currentSlide(1)" class="hover-shadow">
                         </picture>
 
-                        <picture class="column" id="img2">
+                        <picture class="column1" id="img2">
                             <img src="images/img2.jpg" alt="pink teardrop gemstone ring" onclick="openModal();currentSlide(2)" class="hover-shadow">
                         </picture>
-                        <picture class="column" id="img3">
+                        <picture class="column1" id="img3">
                             <img src="images/img3.jpg" alt="ring with pink gem" onclick="openModal();currentSlide(3)" class="hover-shadow">
                         </picture>
-                        <picture class="column" id="img4">
+                        <picture class="column1" id="img4">
                             <img src="images/img4.jpg" alt="ring with 6 gems" onclick="openModal();currentSlide(4)" class="hover-shadow">
                         </picture>
-                        <picture class="column" id="img5">
+                        <picture class="column1" id="img5">
                             <img src="images/img5.jpg" alt="ring with heart gem" onclick="openModal();currentSlide(5)" class="hover-shadow">
                         </picture>
                     </div>
@@ -130,30 +130,39 @@
                 <div id="myModal" class="modal">
                     <span class="close cursor" onclick="closeModal()">&times;</span>
                     <div class="modal-content">
-                
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 5</div>
-                        <img src="images/img1-copia.jpg" alt="ring with purple gem" style="height: 100%; margin-left: 300px;">
-                    </div>
-                
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 5</div>
-                        <img src="images/img2-copia.jpg" alt="pink teardrop gemstone ring" style="height:100%; margin-left: 350px;">
-                    </div>
-                
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 5</div>
-                        <img src="images/img3-copia.jpg" alt="ring with pink gem" style="height:100%; margin-left: 300px;">
-                    </div>
-                
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 5</div>
-                        <img src="images/img4-copia.jpg" alt="ring with 6 gems" style="height:100%; margin-left: 300px;">
-                    </div>
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 5</div>
+                            <picture class="modal-picture">
+                                <img src="images/img1-copia.jpg" alt="ring with purple gem">
+                            </picture>
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 5</div>
+                            <picture class="modal-picture">
+                                <img src="images/img2-copia.jpg" alt="pink teardrop gemstone ring">
+                            </picture>
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 5</div>
+                            <picture class="modal-picture">
+                                <img src="images/img3-copia.jpg" alt="ring with pink gem">
+                            </picture>
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <picture class="modal-picture">
+                                <img src="images/img4-copia.jpg" alt="ring with 6 gems">
 
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 5</div>
-                        <img src="images/img5-copia.jpg" alt="ring with heart gem" style="height:100%; margin-left: 350px;">
+                            </picture>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                            <picture class="modal-picture">
+                                <img id="picture5" src="images/img5-copia.jpg" alt="ring with heart gem">
+                            </picture>
                     </div>
                 
                     <!-- Next/previous controls -->
@@ -167,25 +176,28 @@
                 
                 
                     <!-- Thumbnail image controls -->
-                    <div class="column" >
-                        <img class="demo" src="images/img1.jpg" onclick="currentSlide(1)" alt="ring with purple gem">
+                    <div class="example-modals">
+                        <div class="column" >
+                            <img class="demo" src="images/img1.jpg" onclick="currentSlide(1)" alt="ring with purple gem">
+                        </div>
+                    
+                        <div class="column" >
+                            <img class="demo" src="images/img2.jpg" onclick="currentSlide(2)" alt="pink teardrop gemstone ring">
+                        </div>
+                    
+                        <div class="column" >
+                            <img class="demo" src="images/img3.jpg" onclick="currentSlide(3)" alt="ring with pink gem">
+                        </div>
+                    
+                        <div class="column" >
+                            <img class="demo" src="images/img4.jpg" onclick="currentSlide(4)" alt="ring with 6 gems">
+                        </div>
+    
+                        <div class="column">
+                            <img class="demo" src="images/img5.jpg" onclick="currentSlide(5)" alt="ring with heart gem">
+                        </div>
                     </div>
-                
-                    <div class="column" >
-                        <img class="demo" src="images/img2.jpg" onclick="currentSlide(2)" alt="pink teardrop gemstone ring">
-                    </div>
-                
-                    <div class="column" >
-                        <img class="demo" src="images/img3.jpg" onclick="currentSlide(3)" alt="ring with pink gem">
-                    </div>
-                
-                    <div class="column" >
-                        <img class="demo" src="images/img4.jpg" onclick="currentSlide(4)" alt="ring with 6 gems">
-                    </div>
-
-                    <div class="column">
-                        <img class="demo" src="images/img5.jpg" onclick="currentSlide(5)" alt="ring with heart gem">
-                    </div>
+                    
                 
                     </div>
                 </div>
