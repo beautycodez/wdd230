@@ -275,7 +275,7 @@ main{
 
 }
 .home-picture {
-    height: 600px;
+    height: 620px;
 }
 .home-picture picture{
     text-align: center;
@@ -309,7 +309,7 @@ main{
     padding: 0px 5px;
     padding-top: 100px;
     text-align: center;
-
+    line-height: 6rem;
 }
 #blog-content{
     background-color: #78613F;
@@ -317,7 +317,7 @@ main{
     padding: 5px;
     width: 90%;
     margin: 0 auto;
-    height: 600px;
+    height: 620px;
 }
 #blog-content h4, #blog-content p{
     color: black;
@@ -522,7 +522,7 @@ p{
     object-fit: cover;
   }
   #picture5 {
-    object-position: 0px -500px;
+    object-position: 0px 60%;
   }
   /* Next & previous buttons */
   .prev,
