@@ -277,10 +277,27 @@ input[type=submit]:hover {
   box-shadow: 2px 4px 2px 4px rgba(0,0,0,0.5);
   font-size: 1.1rem;
 }
+.google-maps {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 20px 0px;
+  grid-column: 1/3;
+}
+.google-maps iframe {
+  width: 100%;
+  max-width: 400px;
+}
 /* ----------footer---------- */
 footer {
   display: flex;
   background-color: #EED0D2;
   ;
-
+}
+.whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
